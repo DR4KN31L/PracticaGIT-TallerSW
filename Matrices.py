@@ -36,6 +36,35 @@ def productoPunto(matriz1,matriz2):
     return np.dot(matriz1,matriz2)
 
 
+
+#Funcion para determinar si un numero es primo o no
+def esPrimo(numero):
+    divisores=0
+    for i in range(numero):
+        if numero%(i+1)==0:
+            divisores=divisores+1
+        
+        if divisores>2:
+            return False
+    return True
+
+#Funcion para reemplazar los numeros primos mi compa 
+def reemplazarPrimosNorteños(matriz):
+    for i in range(matriz.shape[0]):
+        for j in range(matriz.shape[1]):
+            res=esPrimo(matriz[i][j])
+            if res==True:
+                matriz[i][j]=-1
+            
+    return matriz
+
+a,b=crearMatrices()
+m=productoPunto(a,b)
+print(m) 
+print("...")
+matriz=reemplazarPrimosNorteños(m)
+print(matriz)
+
 def reemplazarPrimosNorteños(matriz):
 
     
