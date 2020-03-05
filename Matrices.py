@@ -10,6 +10,7 @@ una funcion que reciba dos matrices de tamaño diferente n*m y n*x,
 llenarla con numeros aleatorios,los tamaños se le piden al usuario, 
 se les hace el producto cruz,cambiar por -1 o 0 los numeros primos
 '''
+
 import numpy as np
  
 #funcion para crear matrices
