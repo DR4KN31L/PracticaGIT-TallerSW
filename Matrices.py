@@ -8,9 +8,8 @@ Created on Wed Mar  4 20:09:21 2020
 '''
 una funcion que reciba dos matrices de tamaño diferente n*m y n*x, 
 llenarla con numeros aleatorios,los tamaños se le piden al usuario, 
-se les hace el producto cruz,cambiar por -1 o 0 los numeros primos
+se les hace el producto punto,cambiar por -1 o 0 los numeros primos
 '''
-
 import numpy as np
  
 #funcion para crear matrices
@@ -31,10 +30,11 @@ def crearMatrices():
     print(np.dot(nm,my))
     
     return nm,my
-    
+
 #Funcion para obtener el producto punto
 def productoPunto(matriz1,matriz2):
     return np.dot(matriz1,matriz2)
+
 
 
 #Funcion para determinar si un numero es primo o no
@@ -64,3 +64,14 @@ print(m)
 print("...")
 matriz=reemplazarPrimosNorteños(m)
 print(matriz)
+
+def reemplazarPrimosNorteños(matriz):
+
+    
+    
+    
+    
+    
+a,b=crearMatrices()
+m=productoPunto(a,b)
+print(m) 
