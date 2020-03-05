@@ -25,3 +25,15 @@ def crearMatrices():
     nx=np.random.randint(100,size=(x,n))
     print(nx)
     
+
+
+def esPrimo(numero):
+    divisiores=0
+    for i in range(numero):
+        if numero%(i+1)==0:
+            divisores=divisores+1
+        
+        if divisiores>2:
+            return False
+    return True
+
